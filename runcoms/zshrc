@@ -11,3 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+[ -f ~/.aliases ] && source ~/.aliases
+
+unsetopt share_history
+
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+

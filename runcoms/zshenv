@@ -9,3 +9,14 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export TDD=0
+export GPG_TTY="tty"
+export HOMEBREW_INSTALL_CLEANUP=1
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+export GOPATH=$HOME
+export GITHUB_TOKEN_CI_STATUS=701ee6961cc433d22fd63699163e209147bf5a19
+
+if [ -e /Users/jfilip/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/jfilip/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
