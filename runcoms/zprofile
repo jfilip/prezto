@@ -59,7 +59,7 @@ path=(
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
   /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
-  /Users/jfilip/src/cli_tools
+  "${ZDOTDIR:-$HOME}/src/cli_tools"
   $path
 )
 
