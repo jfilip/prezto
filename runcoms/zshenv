@@ -13,3 +13,4 @@ fi
 export GPG_TTY="tty"
 export HOMEBREW_INSTALL_CLEANUP=1
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+. "$HOME/.cargo/env"
